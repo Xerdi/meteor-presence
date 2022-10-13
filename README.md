@@ -1,4 +1,4 @@
-# Xerdi Presence
+# Meteor Presence
 
 A simple wrapper for the [user-status](https://github.com/Meteor-Community-Packages/meteor-user-status) package.
 
