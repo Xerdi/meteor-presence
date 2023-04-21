@@ -1,17 +1,18 @@
 Package.describe({
     name: 'xerdi:presence',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'Plugin for tracking user presence',
     git: 'https://github.com/Xerdi/meteor-presence.git',
     documentation: 'README.md'
 });
 
 Package.onUse(function (api) {
+    api.versionsFrom('2.11.0');
     api.use([
-        'ecmascript@0.16.2',
-        'accounts-base@2.2.4',
+        'ecmascript',
+        'accounts-base',
         'mizzao:user-status@1.0.1',
-        'xerdi:logging@0.0.3'
+        'xerdi:logging@0.0.4'
     ]);
     api.mainModule('client.js', 'client');
     api.mainModule('server.js', 'server');
